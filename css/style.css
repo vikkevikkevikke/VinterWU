@@ -1,6 +1,6 @@
 :root {
   --main: #8BC34A;
-  --mörk: #2f6b27;
+  --dark: #2f6b27;
   --radius: 12px;
 }
 
@@ -74,6 +74,8 @@ nav a {
 
 section {
   grid-area: sc;
+  background-color: #6fae2f;
+  border-radius: var(--radius);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,11 +88,11 @@ main {
   gap: 20px;
   justify-content: center;
   padding: 20px;
-  flex-wrap: wrap; /* så att det fungerar bättre på mindre skärmar */
+  flex-wrap: wrap;
 }
 
 .product {
-  background: rgba(255, 255, 255, 0.95); /* nästan vit bakgrund */
+  background: rgba(255, 255, 255, 0.95); 
   border-radius: var(--radius);
   padding: 15px;
   text-align: center;
@@ -98,7 +100,6 @@ main {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* liten hover-effekt för att kännas mer interaktiv */
 .product:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.15);
@@ -128,7 +129,7 @@ main {
 .product button {
   padding: 8px 16px;
   cursor: pointer;
-  background: var(--mörk);
+  background: var(--dark);
   color: white;
 }
 

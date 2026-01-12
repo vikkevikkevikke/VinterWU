@@ -20,14 +20,12 @@
     padding: 20px;
   }
   
-  /* HEADER */
   header {
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
   }
   
-  /* NAVIGATION */
   nav {
     display: flex;
     justify-content: center;
@@ -44,17 +42,19 @@
     text-decoration: underline;
   }
   
-  /* INTRO */
   .intro {
     background: var(--light);
     padding: 35px;
     text-align: center;
     border-radius: var(--radius);
   }
+
+  main {
+    display: grid;
+  }
   
-  /* PRODUCTS GRID */
   .products {
-    display: flex; /* FLEX i GRID */
+    display: flex; 
     justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
@@ -81,7 +81,6 @@
     margin-top: 10px;
   }
   
-  /* BADGES */
   .badge {
     display: inline-block;
     background: var(--dark);
@@ -100,7 +99,6 @@
     background: #2f6b27;
   }
   
-  /* INFO SECTION */
   .info {
     background: rgba(255,255,255,0.7);
     padding: 30px;
@@ -108,7 +106,6 @@
     border-radius: var(--radius);
   }
   
-  /* FOOTER */
   footer {
     text-align: center;
     color: white;
